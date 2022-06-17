@@ -1,8 +1,16 @@
 package food.appetizer;
 
-public class FrenchFries implements Appetizer{
+import config.Constants;
+import food.Food;
+import food.decorator.FoodDecorator;
+
+public class FrenchFries extends FoodDecorator implements Appetizer{
+    public FrenchFries(Food newFood) {
+        super(newFood);
+    }
+
     @Override
     public double getPrice() {
-        return 0;
+        return super.getPrice()+ Constants.PRICE_FRENCH_FRIES;
     }
 }

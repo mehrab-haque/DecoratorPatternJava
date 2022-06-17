@@ -1,8 +1,16 @@
 package food.drink;
 
-public class Coke implements Drink{
+import config.Constants;
+import food.Food;
+import food.decorator.FoodDecorator;
+
+public class Coke extends FoodDecorator implements Drink{
+    public Coke(Food newFood) {
+        super(newFood);
+    }
+
     @Override
     public double getPrice() {
-        return 0;
+        return super.getPrice()+ Constants.PRICE_COKE;
     }
 }

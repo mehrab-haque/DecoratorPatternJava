@@ -1,8 +1,16 @@
 package food.burger;
 
-public class ChickenBurger implements Burger{
+import config.Constants;
+import food.Food;
+import food.decorator.FoodDecorator;
+
+public class ChickenBurger extends FoodDecorator implements Burger{
+    public ChickenBurger(Food newFood) {
+        super(newFood);
+    }
+
     @Override
     public double getPrice() {
-        return 0;
+        return super.getPrice()+ Constants.PRICE_CHICKEN_BURGER;
     }
 }
