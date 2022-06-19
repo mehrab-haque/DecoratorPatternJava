@@ -13,4 +13,9 @@ public class Coffee extends FoodDecorator implements Drink{
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_COFFE;
     }
+
+    @Override
+    public String toString() {
+        return "Coffee\n"+super.toString();
+    }
 }

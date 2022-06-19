@@ -13,4 +13,9 @@ public class Water extends FoodDecorator implements Drink {
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_WATER;
     }
+
+    @Override
+    public String toString() {
+        return "Water\n"+super.toString();
+    }
 }

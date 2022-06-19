@@ -13,4 +13,9 @@ public class Coke extends FoodDecorator implements Drink{
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_COKE;
     }
+
+    @Override
+    public String toString() {
+        return "Coke\n"+super.toString();
+    }
 }

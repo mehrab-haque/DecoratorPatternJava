@@ -13,4 +13,9 @@ public class Cheese extends FoodDecorator implements Food {
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_CHEESE;
     }
+
+    @Override
+    public String toString() {
+        return "Cheese\n"+super.toString();
+    }
 }

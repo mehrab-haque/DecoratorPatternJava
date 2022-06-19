@@ -13,4 +13,9 @@ public class VeggiBurger extends FoodDecorator implements Burger{
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_VEGGI_BURGER;
     }
+
+    @Override
+    public String toString() {
+        return "Veggi Burger\n"+super.toString();
+    }
 }

@@ -13,4 +13,9 @@ public class FrenchFries extends FoodDecorator implements Appetizer{
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_FRENCH_FRIES;
     }
+
+    @Override
+    public String toString() {
+        return "French Fries\n"+super.toString();
+    }
 }

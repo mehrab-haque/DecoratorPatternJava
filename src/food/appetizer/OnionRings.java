@@ -13,4 +13,9 @@ public class OnionRings extends FoodDecorator implements Appetizer{
     public double getPrice() {
         return super.getPrice()+ Constants.PRICE_ONION_RINGS;
     }
+
+    @Override
+    public String toString() {
+        return "Onion Rings\n"+super.toString();
+    }
 }
